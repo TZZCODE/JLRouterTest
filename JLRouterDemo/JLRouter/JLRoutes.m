@@ -429,9 +429,6 @@ static BOOL shouldDecodePlusSymbols = YES;
 	[self verboseLogWithFormat:@"URL path components: %@", pathComponents];
 	
 	for (_JLRoute *route in routes) {
-        if ([route.pattern isEqualToString:@"/NSBusinessLine/Channel/JLFChannel/ViewController/NBSJLFChannelViewController"]) {
-            NSLog(@"11");
-        }
 		NSDictionary *matchParameters = [route parametersForURL:URL components:pathComponents];
 		if (matchParameters) {
 			[self verboseLogWithFormat:@"Successfully matched %@", route];
